@@ -66,4 +66,4 @@ If you use this module in your research, please cite the Zerua framework, underl
 
 Depending on your specific integration, you may also want to cite the Basilisk Astrodynamics Software documentation.
 
-## Permissions/License
+
