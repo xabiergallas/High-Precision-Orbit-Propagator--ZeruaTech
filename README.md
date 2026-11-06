@@ -53,7 +53,3 @@ Attach the final PDF to each GitHub release.
 
 See [CITATION.cff](CITATION.cff). Please also cite Basilisk.
 
-## License
-
-TODO: choose before making the repo public (e.g. MIT/BSD for code, CC BY 4.0 for the manuscript).
-Basilisk keeps its own license. Confirm first that ZeruaTech and EHU allow public release.
