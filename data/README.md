@@ -8,4 +8,4 @@
 | TODO | GEO | | | `configs/GEO_3body_nodrag.yaml` |
 | TODO | Molniya | | | `configs/Molniya_higheccen.yaml` |
 
-All data was taken from CelesTrack.
+All data was taken from CelesTrak.

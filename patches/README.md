@@ -1,10 +1,14 @@
-# Basilisk fix
+# Patches to external software
 
+<<<<<<< HEAD
 Fix submitted to develop branch, status: un-merged
+=======
+| Folder | Library | Summary | Upstream | Status |
+|--------|---------|---------|----------|--------|
+| `basilisk-spice-naming/` | Basilisk | Saturn/Uranus/Neptune identifiers in `simIncludeGravBody` did not match the barycenter-only SPICE kernels | TODO issue / PR | open |
+>>>>>>> 54410f7 (Edit markdown files)
 
-Until it is merged you can either:
-- use the `external/basilisk` submodule (fork branch with the fix), or
-- apply the patch from a Basilisk checkout: `git apply /path/to/patches/basilisk-fix.patch`
-
-Create the patch from your fork branch with:
-`git diff develop...feature/bsk-XXX--short-desc > patches/basilisk-fix.patch`
+Each folder contains a `DESCRIPTION.md` (problem, fix, how to reproduce), a `reproduce_bug.py`,
+the drafts used for the upstream issue/PR, and the `.patch` file.
+Generate the patch from the fork branch:
+`git format-patch upstream/develop --stdout > 0001-saturn-uranus-neptune-barycenter.patch`

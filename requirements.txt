@@ -1,4 +1,4 @@
-# Exact BSK version was [], but latest versión works
+# Exact BSK version was [], but latest version works
 bsk              
 numpy
 scipy
