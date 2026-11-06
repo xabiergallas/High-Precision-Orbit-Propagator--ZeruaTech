@@ -1,6 +1,6 @@
 # Basilisk fix
 
-Fix submitted upstream: <!-- TODO: link issue + PR -->
+Fix submitted to develop branch, status: un-merged
 
 Until it is merged you can either:
 - use the `external/basilisk` submodule (fork branch with the fix), or
