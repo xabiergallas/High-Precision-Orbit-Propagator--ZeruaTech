@@ -8,5 +8,4 @@
 | TODO | GEO | | | `configs/GEO_3body_nodrag.yaml` |
 | TODO | Molniya | | | `configs/Molniya_higheccen.yaml` |
 
-Record the retrieval date and source for every TLE. Space-Track's terms ask you not to
-redistribute bulk data; a handful of TLEs for a thesis is normally fine, but check.
+All data was taken from CelesTrack.
