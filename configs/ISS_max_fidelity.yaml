@@ -1,0 +1,37 @@
+# =============================================================================
+# HPOP Configuration: Maximum Fidelity Profile (ISS)
+# =============================================================================
+
+simulation:
+  simulation_hours: 72.0
+  time_step_sec: 10.0
+  integrator: "RKF45"       # Variable-step integration 
+  abs_tolerance: 1e-12      # Strict error boundaries per step
+  rel_tolerance: 1e-12
+
+spacecraft:
+  mass: 420000.0            # ISS nominal mass in kg
+
+forces:
+  geopotential:
+    enabled: true
+    degree: 100             # High-degree spherical harmonics for Earth's gravity field
+    
+  drag:
+    enabled: true
+    atmosphere_model: "MSIS" # NRLMSISE-00 atmospheric density engine
+    drag_coefficient: 2.2
+    projected_area: 2400.0   # Large drag cross-section (ISS solar arrays)
+    f107: 150.0              # Active solar flux parameter
+    ap: 15.0                 # Geomagnetic index
+
+  third_body:
+    enabled: true
+    # Full multi-body perturbations mapped from SPICE ephemerides
+    bodies: ["earth", "sun", "moon", "jupiter barycenter",
+        "venus", "mars barycenter", "mercury",
+        "saturn", "neptune", "uranus"]
+
+deorbiting:
+  enabled: true
+  altitude_limit_km: 100.0   # Terminate simulation immediately upon atmospheric reentry

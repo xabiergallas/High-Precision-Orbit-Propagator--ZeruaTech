@@ -1,0 +1,30 @@
+# =============================================================================
+# HPOP Configuration: Fast Execution for Web API
+# =============================================================================
+
+simulation:
+  simulation_hours: 12.0
+  time_step_sec: 30.0         # Large fixed step for rapid execution
+  integrator: "rk4"           # Standard 4th-order Runge-Kutta 
+  output_points: 500          # Reduced data footprint for web API transmission
+
+spacecraft:
+  mass: 1000.0
+
+forces:
+  geopotential:
+    enabled: true
+    degree: 4                 # Captures J2, J3, J4 only, a lot faster for obvious reasons
+    
+  drag:
+    enabled: true
+    atmosphere_model: "EXPONENTIAL" # Computationally cheaper than MSIS
+    drag_coefficient: 2.2
+    projected_area: 2.5
+
+  third_body:
+    enabled: true
+    bodies: ["sun", "moon"]   # Strips out planetary SPICE kernel lookups, would recommend using SPICE and at least Jupiter though
+
+deorbiting:
+  enabled: false # Deorbiting event isn't really needed in most cases, so you can get away without it. Mileage may vary

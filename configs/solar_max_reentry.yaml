@@ -1,0 +1,33 @@
+# =============================================================================
+# HPOP Configuration: Extreme Solar Activity & Reentry Profile
+# =============================================================================
+
+simulation:
+  simulation_hours: 120.0     # 5-day horizon to capture rapid orbital decay
+  time_step_sec: 10.0
+  integrator: "rkf45"
+  abs_tolerance: 1e-10        # lower tolerance due to violent changes during reentry
+  rel_tolerance: 1e-10
+
+spacecraft:
+  mass: 500.0             # Very small satellite mass, more susceptible to drag forces (we want to see the edge-case scenario)
+
+forces:
+  geopotential:
+    enabled: true
+    degree: 70          # Moderate degree for LEO, big Earth oblateness influence at these altitudes  
+    
+  drag:
+    enabled: true
+    atmosphere_model: "MSIS"
+    drag_coefficient: 2.2
+    projected_area: 5.0
+    f107: 220.0               # Simulates extreme Solar Maximum flux
+    ap: 45.0                  # Simulates a severe geomagnetic storm
+
+  third_body:
+    enabled: false            # Negligible compared to extreme drag forces at LEO
+
+deorbiting:
+  enabled: true
+  altitude_limit_km: 100.0    # Will halt simulation precisely at this boundary. Can lower the limit, but integration instability may occur if too low.

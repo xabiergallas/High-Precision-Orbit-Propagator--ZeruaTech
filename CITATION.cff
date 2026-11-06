@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or thesis, please cite it as below."
+title: "Development of a High-Precision Orbit Propagation (HPOP) model for Zerua"
+type: software
+authors:
+  - family-names: Gallastegui
+    given-names: Xabier
+    affiliation: "Euskal Herriko Unibertsitatea (UPV/EHU)"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO
+date-released: "2026-01-01"                               # TODO
+version: "0.1.0"
+# doi: "10.5281/zenodo.XXXXXXX"                           # TODO after first Zenodo release
+repository-code: "https://github.com/YOUR_USER/bsc-thesis-hpop"   # TODO
+# license: MIT                                            # TODO: choose a license (see README)
+references:
+  - type: software
+    title: "Basilisk Astrodynamics Simulation Framework"
+    authors:
+      - name: "AVS Lab, University of Colorado Boulder"
+    url: "https://hanspeterschaub.info/basilisk"

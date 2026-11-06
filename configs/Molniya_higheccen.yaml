@@ -1,0 +1,34 @@
+# =============================================================================
+# HPOP Configuration: Highly Elliptical Orbit (HEO) Profile (Molniya)
+# =============================================================================
+
+simulation:
+  simulation_hours: 48.0      # Covers roughly 4 full Molniya periods
+  time_step_sec: 5.0          # Small baseline step for rapid perigee transit
+  integrator: "rkf78"         # High-order adaptive integrator for extreme eccentricity
+  abs_tolerance: 1e-13        # Extremely strict tolerances required for HEO stability
+  rel_tolerance: 1e-13
+
+spacecraft:
+  mass: 1600.0                # Molniya 2-9 estimated end-of-life mass
+
+forces:
+  geopotential:
+    enabled: true
+    degree: 100                # High degree needed for perigee passes
+    
+  drag:
+    enabled: true
+    atmosphere_model: "MSIS"
+    drag_coefficient: 2.2
+    projected_area: 17.0      # Accounts for partial solar array deployment
+    f107: 100.0
+    ap: 10.0
+
+  third_body:
+    enabled: true
+    bodies: ["sun", "moon", "jupiter barycenter"] # Crucial for apogee perturbations, rest aren't * that * important
+
+deorbiting:
+  enabled: true
+  altitude_limit_km: 100.0

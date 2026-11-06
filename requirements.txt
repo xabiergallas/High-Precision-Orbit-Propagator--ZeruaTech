@@ -1,0 +1,7 @@
+# Exact BSK version was [], but latest versión works
+bsk              
+numpy
+scipy
+matplotlib
+PyYAML
+skyfield

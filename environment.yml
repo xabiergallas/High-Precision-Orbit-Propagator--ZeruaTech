@@ -1,0 +1,12 @@
+name: hpop
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - matplotlib
+  - pyyaml
+  - skyfield
+  - pip
+  - pip:
+      - bsk          # TODO: pin version, e.g. bsk==2.x.y

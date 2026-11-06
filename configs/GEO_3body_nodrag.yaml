@@ -1,0 +1,29 @@
+# =============================================================================
+# HPOP Configuration: Geostationary Deep-Space Profile (3-Body, No Drag, Long duration)
+# =============================================================================
+
+simulation:
+  simulation_hours: 168.0    # 1-Week extended tracking horizon
+  time_step_sec: 60.0        # GEO has slower orbital dynamics, larger steps allowed. CAREFUL WITH HIGHLY ECCENTRIC ORBITS, THIS DOESN'T APPLY ! ! ! !
+  integrator: "RKF45"
+  abs_tolerance: 1e-11
+  rel_tolerance: 1e-11
+
+spacecraft:
+  mass: 2030.0               # Meteosat class satellite weight
+
+forces:
+  geopotential:
+    enabled: true
+    degree: 8               # GEO requires lower gravity degrees but benefits from tesserals 
+    
+  drag:
+    enabled: false          # Negligible at GEO altitude
+
+  third_body:
+    enabled: true
+    bodies: ["sun", "moon"] # Dominant dynamic perturbations for GEO stationkeeping drift
+
+deorbiting:
+  enabled: true
+  altitude_limit_km: 100.0

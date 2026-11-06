@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hpop"
+version = "0.1.0"
+description = "High-precision orbit propagation built on Basilisk (BSc Physics thesis, EHU / ZeruaTech)"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Xabier Gallastegui" }]
+dependencies = ["numpy", "scipy", "matplotlib", "PyYAML", "skyfield", "bsk"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff", "pre-commit"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
