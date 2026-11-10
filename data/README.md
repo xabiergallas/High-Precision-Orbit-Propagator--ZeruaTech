@@ -1,6 +1,6 @@
 # Data
 
-`tle/` holds the Two-Line Element sets used as initial conditions (3-line format: name + 2 lines).
+`tle/` holds the Two-Line Element sets used as initial conditions (3-line format: name + 2 lines). (PLACEHOLDER, data to be uploaded 11-14-2026)
 
 | File | Object | Epoch | Source | Config used |
 |------|--------|-------|--------|-------------|

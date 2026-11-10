@@ -1,7 +1,7 @@
 # Figures
 
 Every figure in the thesis should be regenerable from a script in `scripts/`.
-Write outputs to `../manuscript/figures/`.
+Outputs to `../manuscript/figures/`. (PLACEHOLDER, scripts to be uploaded 11-14-2026)
 
 | Figure | Script | Config | TLE |
 |--------|--------|--------|-----|

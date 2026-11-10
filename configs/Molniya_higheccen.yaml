@@ -10,7 +10,7 @@ simulation:
   rel_tolerance: 1e-13
 
 spacecraft:
-  mass: 1600.0                # Molniya 2-9 estimated end-of-life mass
+  mass: 1600.0                # Molniya 2-9 estimated end-of-life mass (check main manuscript for reference)
 
 forces:
   geopotential:
@@ -21,7 +21,7 @@ forces:
     enabled: true
     atmosphere_model: "MSIS"
     drag_coefficient: 2.2
-    projected_area: 17.0      # Accounts for partial solar array deployment
+    projected_area: 17.0      # Accounts for partial solar array deployment (check main manuscript for reference)
     f107: 100.0
     ap: 10.0
 
