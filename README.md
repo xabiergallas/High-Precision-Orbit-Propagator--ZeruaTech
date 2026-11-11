@@ -1,3 +1,4 @@
+[ZeruaTech](logo_zerua.png)
 # High-Precision Orbit Propagation (HPOP) for Zerua: BSc Physics Thesis
 
 Code, configurations, data and manuscript for the Bachelor's Thesis
