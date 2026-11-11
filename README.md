@@ -1,9 +1,11 @@
-[ZeruaTech](logo_zerua.png)
 # High-Precision Orbit Propagation (HPOP) for Zerua: BSc Physics Thesis
 
 Code, configurations, data and manuscript for the Bachelor's Thesis
 *Development of a High-Precision Orbit Propagation (HPOP) model for Zerua*
 (Xabier Gallastegui, EHU, developed during an internship at ZeruaTech).
+
+<img width="260" height="150" alt="logo_zerua" src="https://github.com/user-attachments/assets/5d73b09e-ce9c-4eaf-83b0-0a3bec473edd" />
+
 
 ## Contribution to Basilisk
 
