@@ -14,7 +14,7 @@ This module requires the Basilisk simulation framework.
     * `numpy`, `matplotlib`, `scipy`
     * `PyYAML` (for config parsing)
     * `skyfield` (for TLE and time-scale management)
-    * `Basilisk` (ensure your `PYTHONPATH` is configured to point to your Basilisk build)
+    * `Basilisk` (ensure your `PYTHONPATH` is configured to point to your Basilisk build, follow the BSK install guide)
   
 2. **Setup**: 
    Install the necessary packages via `pip`. In the case of Basilisk, check their [main page](https://avslab.github.io/basilisk/index.html) for more installation details.
@@ -29,7 +29,7 @@ from hpop import HPOP_prop
 
 # Quick run for 1 hour with basic perturbations
 tle = "YOUR_TLE_STRING_HERE" 
-# CAREFUL WITH FORMATTING !! Example TLE format (avoid tabulation):            SAT-25544                                                                         1 25544U 98067A   25336.09225230  .00009217  00000-0  17381-3 0  9994             2 25544  51.6314 195.1903 0003639 193.8265 166.2625 15.49237019541206
+# CAREFUL WITH FORMATTING !! Example TLE format (avoid tabulation, test TLE in the script for reference):            SAT-25544                                                                         1 25544U 98067A   25336.09225230  .00009217  00000-0  17381-3 0  9994             2 25544  51.6314 195.1903 0003639 193.8265 166.2625 15.49237019541206
 pos, vel, time, _, _ = HPOP_prop(tle, bodies=3, drag=True, simTime=1.0)
 
 ```

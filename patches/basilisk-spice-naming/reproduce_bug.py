@@ -10,14 +10,14 @@ Expected on unpatched Basilisk: "saturn", "uranus", "neptune" FAIL
 Expected with the fix: all bodies OK.
 
 NOTE: written against the scenarioOrbitMultiBody.py API; adjust the body list
-to whatever your Basilisk version accepts.  [TODO: paste your observed output]
+to whatever your Basilisk version accepts.  [TODO: paste observed output]
 """
 import sys
 import numpy as np
 from Basilisk.utilities import SimulationBaseClass, macros, simIncludeGravBody
 
 BODIES = ["sun", "jupiter barycenter", "saturn", "uranus", "neptune"]
-# With the fix these become: "saturn barycenter", "uranus barycenter", "neptune barycenter"
+# With the fix these shoould be: "saturn barycenter", "uranus barycenter", "neptune barycenter"
 
 
 def main():

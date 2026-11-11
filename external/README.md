@@ -1,2 +1,2 @@
-Basilisk sub-installation to be placed here.
+Basilisk git submodule to be placed here.
 

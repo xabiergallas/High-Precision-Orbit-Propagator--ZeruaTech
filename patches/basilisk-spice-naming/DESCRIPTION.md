@@ -18,7 +18,9 @@ Jupiter and Mars were already registered as `"jupiter barycenter"` / `"mars bary
 but Saturn, Uranus and Neptune were not: their `planetName` already ended in
 `"... barycenter_planet_data"`, while their `identifier` stayed `"saturn"`, `"uranus"`,
 `"neptune"`. SPICE therefore resolved those to the planet-centre IDs (699, 799, 899), which
-are not in the loaded kernels. Observed symptom: TODO (paste the error / wrong output).
+are not in the loaded kernels. Observed symptom: SPICE missing ephemeris data error code.
+
+
 
 ## How it was found
 `scenarioOrbitMultiBody.py` with all outer planets enabled for the New Horizons case, while
