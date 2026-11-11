@@ -20,6 +20,8 @@ but Saturn, Uranus and Neptune were not: their `planetName` already ended in
 `"neptune"`. SPICE therefore resolved those to the planet-centre IDs (699, 799, 899), which
 are not in the loaded kernels. Observed symptom: SPICE missing ephemeris data error code.
 
+<img width="749" height="399" alt="SPICE_bug_code" src="https://github.com/user-attachments/assets/0e1c8e4f-7912-490b-9a67-3b9f5f0d3267" />
+
 
 
 ## How it was found
