@@ -17,7 +17,7 @@ While building this module I found and fixed a bug in the
 | Issue | TODO: link |
 | Pull request | TODO: link |
 | Status | TODO: open / merged |
-| Summary | TODO: what was wrong and its impact on propagation accuracy |
+| Summary | Naming issue in the planet declaration that conflicted with the SPICE interface, preventing any simulation with Saturn, Uranus or Neptune and having wrong mass parameters belonging to each planet's barycenter instead of the planet itself |
 
 Until merged, `external/basilisk` points to the fork branch containing the fix
 (also available as `patches/basilisk-fix.patch`).
